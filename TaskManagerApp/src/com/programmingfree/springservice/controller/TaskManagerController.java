@@ -23,8 +23,7 @@ public class TaskManagerController {
 	  return tasks;
 	
 	 }
-	 
-	 
+	 	 
 	 @RequestMapping(value="/tasks/archive/{taskIds}",method = RequestMethod.POST,headers="Accept=application/json")
 	 public List<Task> archiveAllTasks(@PathVariable int[] taskIds) {	
 		 for(int i=0;i<taskIds.length;i++){
